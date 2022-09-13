@@ -1,0 +1,74 @@
+* {
+	margin: 0;
+	padding: 0;
+	/*text-decoration: none;*/
+	list-style: none;
+    box-sizing: border-box;
+}
+
+/*
+.img-realoc{
+    max-height: 180px;
+    min-height: 180px;
+}*/
+
+body {
+	padding-bottom: 300px;
+}
+
+.container {
+    /*min-width: calc(750px + 8*10px);*/
+    max-width: 970px;
+	margin: 0 auto;
+} 
+
+.container-img img {
+    width: 100%;
+	display: block;	
+	margin: auto;
+    
+}
+
+.clipetexto {
+	/*position: relative;*/ 
+	display: flex;
+	margin-top: 30px;
+	padding: 20px;
+	background-color: black;
+	/*justify-content: space-between;*/
+	/*display: inline-block;*/
+	/*max-height: fit-content;*/
+	/*background-color:black;*/
+	/*margin: 3rem;*/
+}
+
+.clipes {
+	/*position: absolute;*/
+	/*background-color:black;*/
+}
+
+
+
+.sobre {
+	/*position: absolute;*/
+	color: white;
+	/*text-decoration-color:  white;*/
+	/*display: inline-block;*/
+	/*background-color: green;*/
+	max-height: fit-content;
+	margin-left: 10px;
+	/*align-items: center;*/
+	
+	/*left: 350px;
+	/*margin: 3rem;*/
+}
+
+.sobre h1{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.discografia{
+	margin-top: 3rem;
+	background-color: blue;
+}
+
