@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	/*text-decoration: none;*/
+	text-decoration: none;
 	list-style: none;
     box-sizing: border-box;
 }
@@ -57,7 +57,9 @@ body {
 	/*background-color: green;*/
 	max-height: fit-content;
 	margin-left: 10px;
-	/*align-items: center;*/
+
+	
+
 	
 	/*left: 350px;
 	/*margin: 3rem;*/
@@ -67,8 +69,35 @@ body {
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.discografia{
+.containeralbum{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	margin-top: 3rem;
-	background-color: blue;
+	
+}
+
+.discografia{
+	/*max-width: 600px;*/
+	background-color: white;
+	
+	
+}
+
+.album{
+	background-color: black;
+	margin-top: 10px;
+	display:flex;
+	align-items: center;
+	
+}
+
+.album h2{
+	/*text-decoration: none;*/
+	margin-left: 10px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	color: white;
+}
+
+.album img{
+	height: 200px;
 }
 
