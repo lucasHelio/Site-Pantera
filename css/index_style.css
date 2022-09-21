@@ -4,22 +4,20 @@
 	text-decoration: none;
 	list-style: none;
     box-sizing: border-box;
+	
 }
-
-/*
-.img-realoc{
-    max-height: 180px;
-    min-height: 180px;
-}*/
 
 body {
 	padding-bottom: 300px;
+	
+	
 }
 
 .container {
-    /*min-width: calc(750px + 8*10px);*/
+    min-width: calc(750px + 8*10px);
     max-width: 970px;
 	margin: 0 auto;
+	position: relative;
 } 
 
 .container-img img {
@@ -30,16 +28,11 @@ body {
 }
 
 .clipetexto {
-	/*position: relative;*/ 
 	display: flex;
 	margin-top: 30px;
 	padding: 20px;
 	background-color: black;
-	/*justify-content: space-between;*/
-	/*display: inline-block;*/
-	/*max-height: fit-content;*/
-	/*background-color:black;*/
-	/*margin: 3rem;*/
+	
 }
 
 .clipes {
@@ -50,19 +43,10 @@ body {
 
 
 .sobre {
-	/*position: absolute;*/
 	color: white;
-	/*text-decoration-color:  white;*/
-	/*display: inline-block;*/
-	/*background-color: green;*/
 	max-height: fit-content;
 	margin-left: 10px;
 
-	
-
-	
-	/*left: 350px;
-	/*margin: 3rem;*/
 }
 
 .sobre h1{
@@ -76,28 +60,234 @@ body {
 }
 
 .discografia{
-	/*max-width: 600px;*/
-	background-color: white;
-	
+	align-items: center;
+	flex-direction: column;
+}
+
+button {
+	width: 100%;
+	height: 100%;
+	color: white;
+	background-color: black;
+	border: none;
+	outline: none;
+	padding:calc(82px);
 	
 }
 
+button:active{
+	color:#ec1c24;
+	border-radius: 5px;
+}
+
+.modal-button{
+	font-size: 30px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	display: flex;
+	
+	justify-content: center;
+	outline: none;
+	cursor: pointer;
+	border: none;
+}
+
+.modal-button:active{
+	transform: scale(0.9);
+}
+
+
 .album{
-	background-color: black;
+	background-color: #ec1c24;
 	margin-top: 10px;
 	display:flex;
 	align-items: center;
+	width: 100%;
+	
+	
 	
 }
 
+
 .album h2{
 	/*text-decoration: none;*/
-	margin-left: 10px;
+	/*margin-left: 10px;*/
+	padding: 10px;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	color: white;
+	width: 100%;
 }
 
 .album img{
 	height: 200px;
 }
+
+
+
+.modal {
+    display:none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+	
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    /*background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+
+
+
+.modal-content {
+	
+    position: relative;
+    background-color: white;
+    margin: 2% auto 2%;
+    border: 1px solid #ec1c24;
+	border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+	overflow: auto;
+    max-width: 970px;
+	min-width: auto;
+ }
+
+ /* Add Animation */
+@-webkit-keyframes animatetop {
+	from {top:-300px; opacity:0} 
+	to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+	from {top:-300px; opacity:0}
+	to {top:0; opacity:1}
+  }
+
+
+.modal-header {
+    padding: 0.5rem 1rem;
+    background-color: black;
+    color: #ec1c24;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}   
+  
+.modal-header h1 {
+    margin: 0;
+    display: inline;
+}
+
+.modal-body {
+    
+    margin: 5%;
+    color: black;
+}
+
+.modal-body p {
+    text-align: justify;
+    margin-bottom: 2%;
+    margin-top: 1%;
+}
+
+.modal-body h2 {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 1.5rem;
+}
+
+.modal-body h2:first-child {
+    margin-top: 0.2rem;
+}
+/*
+table {
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid;
+	border-collapse:collapse;
+}*/
+
+table {
+	
+	table-layout: fixed;
+	width: 100%;
+	/*border-collapse: collapse;*/
+	/*border: 3px solid black;*/
+  }
+  
+  thead th:nth-child(1) {
+	width: 30%;
+  }
+  
+  thead th:nth-child(2) {
+	width: 20%;
+  }
+  
+  thead th:nth-child(3) {
+	width: 15%;
+  }
+  
+
+  
+  th,
+  td {
+	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;	
+	padding: 20px;
+	
+  }
+
+th {
+  letter-spacing: 2px;
+}
+
+td {
+  letter-spacing: 1px;
+}
+
+tbody td {
+  text-align: center;
+}
+
+tfoot th {
+  text-align: right;
+}
+
+.modal-body video{
+	height:500px;
+	display: block;
+	margin: 50px auto;
+
+}
+
+  /* The Close Button */
+  .close {
+	  color: #ec1c24;
+	  float: right;
+	  font-size: 28px;
+	  font-weight: bold;
+  }
+	
+  .close:hover, .close:focus {
+	  color: white;
+	  text-decoration: none;
+	  cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+
+
 

@@ -5,6 +5,7 @@
 	background-color: #000000;
 	color: #fff;
     position: fixed;
+    z-index: 2;
 }
 
 .inner_header {
@@ -60,6 +61,7 @@
 }
 
 .butao_menu {
+    font-size: 200%;
     color: #ec1c24;
     padding: 10px;
     display: inline-block;
